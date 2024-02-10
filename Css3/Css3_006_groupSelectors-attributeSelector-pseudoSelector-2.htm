@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>groupSelectors attributeSelector pseudoSelector</title>
+<style>
+    /*
+    attributes selector
+input[type="text"]{
+    background: red;
+}
+
+input[type="button"]{
+   background:yellow;
+}
+
+a[target="_blank"]{
+    font-size:25px;
+}
+*/
+a{
+    border:1px solid red;
+    text-decoration: none;
+    padding:8px 9px;
+    width: 16px;
+    margin:12px;
+}
+
+a:link{
+    color:green;
+    /*background: orange;*/
+}
+
+a:hover{
+    color:yellow;
+    background:orange;
+}
+
+a:visited{
+    color:green;
+    /*background: darkmagenta;*/
+}
+
+a:activate{
+    color:blue;
+    /*background: forestgreen;*/
+}
+
+
+p::after{
+        content:"-BFK Academy"
+}
+</style>
+</head>
+<body>
+    <form>
+<!--
+        <input type="text"><br>
+        <input type="text"><br>
+        <input type="button" value="button"><br>
+        <input type="password"><br>
+
+-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <a href="" target="_blank">Link</a>
+        <a href="">Visited</a>
+        <a href="">Hover</a>
+        <a href="" target="_blank">Active</a>
+
+
+        <p>Lorem ipsum, dolor sit amet</p>
+        <p>2Lorem ipsum, dolor sit amet</p>
+        <p>3Lorem ipsum, dolor sit amet</p>
+        <p>4Lorem ipsum, dolor sit amet</p>
+
+ </form>
+</body>
+</html>

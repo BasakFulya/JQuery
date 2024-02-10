@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            text-align: right;
+            text-transform: lowercase;
+            text-shadow: 0.2px 0.6px 6px yellowgreen;
+            text-decoration: underline;
+
+            font:15px Arial,sans-serif;
+            text-indent: 12px;
+            letter-spacing: 0.8px;
+            line-height: 25.9px;
+            word-spacing: 4px;
+        }
+
+        /*Pseudo Class*/
+        
+try::first-letter{
+    float:left;
+    line-height: 1em;
+    margin:0.25cm 0;
+    font:4.4em 'PaldimFLFRegular',sans-serif,Arial;
+    text-transform: uppercase;
+}
+
+/*Pseudo Element*/
+p::first-letter{
+    float:left;
+    line-height: 1em;
+    margin:0.25em 0;
+    font: 4.4em 'PaldingFLFRegular',sans-serif,Arial;
+    text-transform: uppercase;
+}
+    </style>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis mollitia autem rem aliquam..</p>
+
+    <p class="try">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus officia labore fugiat minus odio odit, itaque sunt optio illum sit porro quisquam quo molestiae facere, debitis laudantium at! Consequuntur, quae.</p>
+</body>
+</html>

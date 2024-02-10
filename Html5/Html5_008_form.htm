@@ -11,19 +11,38 @@
 <body>
 
     <form action="index.html">
-        Name:<input type="text" name="server" id="name" required placeholder="Plz enter your name..."><br> Email:
+         Name:<input type="text" name="server" id="name" required placeholder="Plz enter your name..."><br> Email:
         <input type="email" name="server2" id="email" required placeholder="Email"><br> Password:
         <input type="text" name="server3" id="password" required placeholder="Password"><br>
+<hr><hr>
 
         <select name="" id="">
             <option value="">Backend</option>
             <option value="">Frontend</option>
             <option value="">Fullstack</option>
         </select>
+<br>
+<hr><hr>
+<select name="" multiple>
+    <option value="">Frontend</option>
+    <option value="">Frontend-2</option>
+    <option value="">Frontend-3</option>
+</select>
 
+<hr><hr>
 
-        <input type="reset">
-        <input type="submit">
+<label for="number">Number:</label><br>
+<input type="number" id="number" name="server_link" min="10" max="100" step="5" value="25"><br><br>
+<hr><hr>
+<label>Gender:</label><br>
+Female:<input type="radio" name="gender" id="gnd"> <!--'name' should be same or we can choose both gender.-->
+Male  :<input type="radio" name="gender" id="gnd-2">
+<hr><hr>
+
+<br>
+<br>
+        <input type="reset" value="Clear">
+        <input type="submit" value="Send">
     </form>
 
 

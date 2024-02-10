@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>groupSelectors attributeSelectors pseudoSelector</title>
+
+    <style>
+       /* p,h5{
+            border:1px solid blue;
+        }
+*/
+
+/* div.try{
+    border:1px solid blueviolet;
+} */
+
+div >p{
+    border:1px solid blue;
+}
+    </style>
+
+</head>
+<body>
+    <!--
+    <h1>groupSelectors ==> * + ~ ></h1>
+    <h1>attributeSelectors ==> input[type="text"]</h1>
+    <h1>pseudoSelector ==> PseudoElement (::) PseudoClass (:)</h1>
+-->
+<div>
+    <p>lorem10</p>
+    <p>lorem10</p>
+</div>
+
+<div>
+    <p>lorem5</p>
+</div>
+
+<div>
+    <h5>Hello</h5>
+</div>
+<p>1.p</p>
+<p>2.p</p>
+
+<h3>1st title</h3>
+<h3>2nd title</h3>
+<p>Between h3 and p</p>
+<p>Between h3 and 2.p</p>
+<h5>2.H5</h5>
+<p>h3 and 2.p external</p>
+
+
+</body>
+</html>
