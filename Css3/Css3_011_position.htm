@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+<style>
+   /*FARSS*/
+.stickClass{
+    position:sticky;
+    top:180px;
+    background-color: slateblue;
+}
+
+.fixedClass{
+    position: fixed;
+    background-color: black;
+    color: white;
+    border: 1px solid red;
+    bottom: 0;
+    right:0;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+
+}
+
+    #div-1,#div-2,#div-3 {
+        width: 150px;
+        height: 150px;
+        margin:10px;
+    }
+
+    #div-1 {
+        background-color: blue;
+        color: white;
+    }   
+    
+    #div-2 {
+        background-color: orange;
+        color:white;
+        position:relative;
+        /*position,relative*/
+        top:-20px;
+        left:40px;
+    }
+
+    #div-3 {
+        background-color: palevioletred;
+        color:white;
+    }
+    
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+</style>
+
+
+ </head>
+
+ <body>
+    <div>
+        <img src="../Html5/image/bf.jpg" width="50%;" height="400px;">
+    </div>
+
+    <h2 class="stickClass" style="text-align:center;">TITLE</h2>
+    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odit inventore accusamus repellendus aut magni dolore quia ut et repellat, doloribus, mollitia animi eligendi itaque at culpa nulla. Quaerat, dolorem.
+    Dolorum voluptatem veritatis quibusdam quisquam recusandae asperiores eveniet illum incidunt fuga, quaerat impedit accusamus cumque aliquid aliquam pariatur aperiam. Cumque sequi odio voluptatibus libero tenetur, earum molestias commodi facilis. Beatae!
+    Eum alias nesciunt praesentium repellat similique itaque rem assumenda adipisci, voluptas ullam laboriosam pariatur sed consectetur atque quo vero incidunt exercitationem dolore molestias dignissimos iure nemo ut placeat. A, vitae.
+    Qui accusantium, impedit reprehenderit autem eligendi nobis ab et debitis quibusdam eius. Eius, consequuntur reiciendis facere saepe rem expedita exercitationem pariatur cupiditate sunt aut quod consectetur officia quae laboriosam voluptas?
+    Numquam eveniet ipsam est eaque aliquam quam ducimus, cupiditate cum tenetur perferendis! Aliquid, exercitationem doloribus. Minima illo delectus error in nostrum, vel porro. Tempore qui molestias ex, et eum repellat?</p>
+
+<div class="fixedClass">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aperiam assumenda, blanditiis labore ratione excepturi deserunt, vel debitis minus placeat quisquam ab, quaerat fugiat in unde similique atque autem sint!
+        Soluta iusto sint, id minima praesentium eius molestias? Enim omnis obcaecati minus a, quae doloribus nam esse, qui temporibus, sequi magni architecto. Quaerat corporis eum ipsum. Ea enim dicta ratione?
+ </div>
+<div class="absoluteClass"></div>
+<div class="relativeClass"></div>
+
+
+<div style="position: relative; border:2px solid red;">
+    
+    <div id="div-1">1st Box</div>
+    <div id="div-2">2nd Box</div>
+    <div id="div-3">3rd Box</div>
+
+</div>
+ </body>
+ </html>

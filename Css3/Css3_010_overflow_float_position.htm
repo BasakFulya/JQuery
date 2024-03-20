@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow float position</title>
+
+    <style>
+        .overflow{
+            background-color: sandybrown;
+            width:150px;
+            height:150px;
+
+
+            /*overflow-x: scroll;
+            overflow-y: hidden; 
+            overflow: scroll;
+            */
+
+           overflow: auto;
+
+        }
+div{
+    width:150px;
+    height:150px;
+    margin:5px;
+}
+
+#firstDiv{
+
+    background-color: red;
+    float:left;
+}
+
+#secondDiv{
+
+    background-color: blue;
+    float:left;
+}
+
+#third{
+    background-color: yellow;
+    float:right;
+}
+
+.clearfix-1{
+    clear:both;
+}
+
+.clearfix-2{
+    overflow: auto;
+    
+}
+
+.clearfix-3::after{
+    content: "";
+    clear: both;
+    display: table;
+} 
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="firstDiv"></div>
+    <div id="secondDiv"></div>
+    <div id="third"></div>
+    
+<div class="overflow">
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates harum nobis dolore fugiat blanditiis cumque sequi maxime ducimus repellendus neque labore eos porro fugit excepturi, molestiae distinctio quis sunt.
+Dolorum perferendis dolores exercitationem non, ducimus consectetur vel. Temporibus quos tenetur molestias, at ipsam, quasi minus esse impedit autem quis distinctio amet deserunt harum voluptatibus laudantium. Provident dolor harum praesentium.
+Iure ab deserunt accusamus veniam molestiae voluptatem sapiente ipsum! Ipsa, expedita atque voluptatibus cum, explicabo eos magni, rerum nesciunt assumenda voluptates dolorum earum est et aliquid minus aspernatur reiciendis vero.
+Architecto soluta suscipit dolor temporibus dolorem consequatur. Fugit, beatae corporis, veniam vitae aliquid ea neque ab totam officiis sequi odit voluptatum unde possimus, accusantium provident alias. Eius iure hic alias.
+Expedita saepe quidem alias ipsum ratione sunt tempora eos sit voluptatum recusandae id veniam nemo, ut voluptatibus accusantium exercitationem non culpa adipisci assumenda minima? In dolorem numquam doloribus amet ab.
+Eos natus, perferendis optio perspiciatis doloribus aliquid animi voluptas dignissimos impedit in beatae tempore itaque labore, maxime autem dicta ullam, eaque quas dolor esse magnam velit voluptates! Necessitatibus, tenetur accusantium.
+Placeat sed, dolores ex illo deleniti a repellendus beatae voluptates minima facere harum ducimus rerum, id commodi nisi voluptas labore qui dicta fugit at exercitationem quisquam expedita vel. Consectetur, eum.
+Temporibus laudantium, ipsa unde saepe exercitationem earum illum maxime itaque? Ipsum omnis ducimus hic ipsa obcaecati assumenda libero odio neque laborum, provident eligendi, pariatur rem esse ex molestias officia eius?
+Quos, corporis, fugiat dolorem animi totam incidunt blanditiis nemo illum molestias quis, sint porro ratione nobis temporibus ipsum voluptates voluptas vel minima ullam facere? Accusantium eum sint vel facilis tempora!
+Provident vero at laborum laboriosam sed voluptate expedita accusamus debitis dignissimos explicabo nulla quas numquam quisquam soluta inventore placeat culpa architecto assumenda, eaque, saepe ipsam asperiores error labore. Dolorum, repellendus?</p>
+
+</div>
+
+<div class="clearfix-2" style="width:100%; height:300px; margin-top: 100px; border:1px solid red">
+    <img style="float:right;" src="../Html5/image/peternheidi.jpg" alt="">
+    <p style="margin-left: 12px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Aspernatur earum, ut iste aut facilis illum iusto quisquam 
+         dolore consequatur praesentium eaque ullam, explicabo nobis similique. 
+         Quam neque facilis qui quas cumque iusto, ex adipisci debitis deserunt officia 
+        error asperiores fuga assumenda 
+        dolore consequatur quidem id enim. Eos, quas a? Necessitatibus!</p>
+</div>
+
+</body>
+</html>
