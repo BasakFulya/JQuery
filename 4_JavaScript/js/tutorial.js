@@ -312,25 +312,122 @@ bfk_academy2();
 // console.log(ternary);
 
 // console.log( 5 < 1 ? "Great" : "Smaller" )
-var value=Number(prompt("Enter a value"));
+// var value=Number(prompt("Enter a value"));
 
-var result=2;
-switch (result) {
-    case 1:
-        console.log("1");
-    break;
+// var result=2;
+// switch (result) {
+//     case 1:
+//         console.log("1");
+//     break;
 
-    case 2:
-        console.log("2");
-    break;
+//     case 2:
+//         console.log("2");
+//     break;
 
-    case 3:
-        console.log("3");
-    break;
+//     case 3:
+//         console.log("3");
+//     break;
 
-    default:
-        console.log("out of area");
-    break;
-}
+//     default:
+//         console.log("out of area");
+//     break;
+// }
 
+/*  Loops  */
+//iterative for
+
+// for(let i=0; i<5; i++){
+//     console.log(i);
+// }
+
+// //while
+// let i2=0;
+// while(i2<5){
+//     console.log(i2);
+//     i2++;
+// }
+
+// do{
+//     let i3=6;
+//     console.log(i3); 
+//     i3--;
+// }while(i3>0);
+
+//for in 
+// var array=[1,5,6,8,78];
+
+// for( var temp in array ){
+//     console.log( ` numbers :${temp} element:${array[temp]}`);
+// }
+
+//For Each
+// var array=[1,5,6,8,78];
+// array.forEach(
+//     function (item){
+//         console.log(item)
+//     }
+// );
+
+//if return needed in Map Arrays
+// var newArray=array.map(function (item){
+//     return item+1;
+// } );
+// console.log( newArray);
+// console.log( typeof newArray);
+
+//break    = break the loop,exit from the loop
+//return   = break the method,exit from that function
+//continue = do not run only for this value,continue after this value
+
+/* Array  */
+
+// var array=[1,2,4,3,5,"BFK Academy",[4,9,6,8]];
+// console.log(typeof array);
+// var sort=array.sort();
+// for (var i=0; i<array; i++){
+//     console.log(sort[i]);
+// }
+
+//for in
+// for( let temp in array ){
+//     console.log(array[temp])
+// }
+
+/* ~~~~~ BOM = Browser Object Model ~~~~~ */
+
+// console.log(window);
+// window.alert("Screen");
+// var del=window.confirm("Do you want to delete?");
+// if(del){
+//     console.log("deleting");
+// }else{
+//     console.log("not deleted");
+// }
+
+/* ~~~~~ Object ~~~~~ */
+// var array=[];
+// console.log(array);
+
+var software={
+    //let=local
+    html5:'semantic',
+    css3:'box-shadow',
+    responsive:"@media",
+    bootstrap4:'color',
+    javascript:'BOM',
+    java:['servlet','jsp','jsf','spring'],
+    javaEE:{
+        jsf:'x',
+        jsp:'y',
+        servlet:'z'
+    }
+};
+
+console.log(software.html5);
+console.log(software.responsive);
+console.log(software.java[1]);
+
+var trial=[ { },{ } ]
+trial[0].name
+// console.log(software)
 
