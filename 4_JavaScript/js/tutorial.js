@@ -408,26 +408,53 @@ bfk_academy2();
 // var array=[];
 // console.log(array);
 
-var software={
-    //let=local
-    html5:'semantic',
-    css3:'box-shadow',
-    responsive:"@media",
-    bootstrap4:'color',
-    javascript:'BOM',
-    java:['servlet','jsp','jsf','spring'],
-    javaEE:{
-        jsf:'x',
-        jsp:'y',
-        servlet:'z'
-    }
+// var software={
+//     //let=local
+//     html5:'semantic',
+//     css3:'box-shadow',
+//     responsive:"@media",
+//     bootstrap4:'color',
+//     javascript:'BOM',
+//     java:['servlet','jsp','jsf','spring'],
+//     javaEE:{
+//         jsf:'x',
+//         jsp:'y',
+//         servlet:'z'
+//     }
+// };
+
+// console.log(software.html5);
+// console.log(software.responsive);
+// console.log(software.java[1]);
+
+// var trial=[ { },{ } ]
+// trial[0].name
+// console.log(software)
+ 
+
+//define Non-Parameter Function
+function trial(){
+    console.log("non-parameters functions");  
 };
 
-console.log(software.html5);
-console.log(software.responsive);
-console.log(software.java[1]);
+//trial
 
-var trial=[ { },{ } ]
-trial[0].name
-// console.log(software)
+function trial2(name){
+    return name;
+}
 
+var name=trial2("Fulya","Karaduman");
+console.log(nameSurname);
+
+ //define the nameless function
+ let namelessFunction=function (){
+    console.log("nameless function")
+ };
+ namelessFunction();
+
+
+ //define the nameless function
+ let namelessArrowFunction = () =>{
+    console.log("nameless function")
+ };
+ namelessArrowFunction();
